@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    body {
+      background: #212529;
+      color: white;
+    }
+    .navbar {
+      border-bottom: 1px solid #343a40;
+    }
+    .navbar-brand img {
+      height: 50px;
+    }
+    .carousel-item img {
+      margin: 0 5px;
+    }
+    .row-cols-3 > .col {
+      padding: 5px;
+    }
+    
+    .about-us {
+      padding: 60px 0;
+    }
+    .about-us h2 {
+      margin-bottom: 30px;
+    }
+    .about-us h3 {
+      margin-top: 20px;
+      margin-bottom: 15px;
+    }
+    .about-us ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    .matrix {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .matrix-item {
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #343a40;
+      color: white;
+      height: 200px; /* Adjust as needed */
+    }
+    .matrix-item h5 {
+      margin-top: 0;
+    }
+    #ContactUs {
+      background-color: #212529;
+      color: white;
+      padding: 50px 0;
+      text-align: center;
+    }
+    #ContactUs .container {
+      max-width: 600px; /* Adjust the width as needed */
+      margin: auto;
+    }
+    #ContactUs .input-group-text {
+      background-color: #495057;
+      color: white;
+      border: 1px solid #6c757d;
+    }
+    #ContactUs .form-control {
+      background-color: #495057;
+      color: white;
+      border: 1px solid #6c757d;
+    }
+    #ContactUs .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+    #ContactUs .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #004085;
+    }
+    .card {
+      border: none;
+      border-radius: 10px;
+    }
+    .card-img-top {
+      border-radius: 10px 10px 0 0;
+    }
+    .card-body {
+      background-color: #343a40;
+      color:white;
+    }
+    .card-body a {
+      color: #007bff;
+      color:white;
+    }
+    .card-body a:hover {
+      color: #0056b3;
+    }
+      
+  </style>
+</head>
+<body>
+
+<!-- Navbar start -->
+<nav class="navbar navbar-expand-lg bg-dark border-bottom border-body sticky-top" data-bs-theme="dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="images/logo.png" alt="Logo">
+    </a>  
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#Home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#AboutUs">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Favourites">Favourites</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#ContactUs">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Navbar end -->
+
+<!-- Image start-->
+ <section id="Home" class="Home">
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-12">
+      <img src="images/image12.jpg" class="img-fluid" alt="Descriptive alt text">
+    </div>
+  </div>
+</div>
+</section>
+<!-- Image end -->
+
+<!-- About Us section -->
+<section id="AboutUs" class="about-us">
+  <div class="container">
+    <h2>About Us</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Our Mission</h3>
+        <p>At Boomerang, our mission is to bring joy and satisfaction to our customers through exceptional ice cream made from the highest-quality ingredients. We are dedicated to crafting unique and delicious flavors that create delightful moments with every scoop. Whether through our innovative recipes, our friendly customer service, or our commitment to environmental sustainability, we aim to exceed your expectations and make every visit memorable.</p>
+      </div>
+      <div class="col-md-6">
+        <h3>Our Story</h3>
+        <p>Founded in 2010 by ice cream enthusiasts Jane and Mark Roberts, Boomerang began with a simple idea: to create artisanal ice cream that brings a smile to your face. Starting from a small shop in Denver, Colorado, what began as a local favorite quickly grew into a beloved brand known for its rich flavors and dedication to quality. Over the years, Boomerang has expanded across the country, and from 2010 to 2024, we have proudly served countless customers with our signature blends. Our passion for ice cream and commitment to excellence continue to drive us forward, making every day a celebration of sweet, creamy delight.</p>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <h3 class="text-center mb-4">Our Values</h3>
+      <div class="matrix">
+        <div class="matrix-item">
+          <h5>Quality</h5>
+          <p>We use the finest ingredients and uphold the highest standards to ensure every scoop is of exceptional quality.</p>
+        </div>
+        <div class="matrix-item">
+          <h5>Innovation</h5>
+          <p>We continuously explore new flavors and techniques to bring exciting and unique offerings to our customers.</p>
+        </div>
+        <div class="matrix-item">
+          <h5>Sustainability</h5>
+          <p>We are dedicated to minimizing our environmental impact through responsible sourcing and eco-friendly practices.</p>
+        </div>
+        <div class="matrix-item">
+          <h5>Customer Satisfaction</h5>
+          <p>Your happiness is our top priority. We strive to create unforgettable experiences and build lasting relationships with our customers.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- About Us end-->
+
+<!-- Gallery start -->
+<section id="Favourites" class="mt-5">
+  <div class="container">
+    <h1>Favourites</h1>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <!-- First Card -->
+      <div class="col">
+        <div class="card">
+          <img src="images/image4.jpg" class="card-img-top" alt="Card Image 1">
+          <div class="card-body">
+            <h5 class="card-title">Black Current</h5>
+            <p class="card-text">Black currant ice cream offers a unique and tantalizing flavor experience, distinguished by the rich, tart essence of black currants. Known for their deep purple color and intense, tangy taste, black currants are a delightful choice for an ice cream that is both refreshing and exotic. The ice cream's base is typically creamy and smooth, providing a perfect balance to the robust flavor of the black currants. Each spoonful delivers a burst of fruity vibrancy, complemented by subtle notes of sweetness. Ideal for those who appreciate a sophisticated twist on traditional flavors, black currant ice cream is often enhanced with additional ingredients like a hint of vanilla or a touch of citrus to elevate its taste. Whether enjoyed on a warm day or as a novel dessert option, black currant ice cream stands out for its distinctive and delicious profile.</p>
+            <a href="#" class="btn btn-primary">Click here for more details!</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Second Card -->
+      <div class="col">
+        <div class="card">
+          <img src="images/image5.jpg" class="card-img-top" alt="Card Image 2">
+          <div class="card-body">
+            <h5 class="card-title">Brownie with Vanilla Ice Cream</h5>
+            <p class="card-text">A classic and indulgent treat, the combination of a rich, fudgy brownie with creamy vanilla ice cream is a perfect marriage of flavors and textures. The brownie, with its dense, chocolatey goodness and gooey center, provides a decadent contrast to the smooth, cool vanilla ice cream. The warm brownie melts slightly as it meets the ice cream, creating a delightful fusion of temperatures and a deliciously contrasting bite. The vanilla ice cream, with its creamy, sweet flavor, complements the deep, intense chocolate notes of the brownie, while its subtle vanilla essence adds an extra layer of depth. This pairing is not only visually appealing but also a sensory delight, offering a satisfying blend of warm and cold, soft and chewy, sweet and slightly bitter. Ideal for a comforting dessert.</p>
+            <a href="#" class="btn btn-primary">Click here for more details!</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Third Card -->
+      <div class="col">
+        <div class="card">
+          <img src="images/image6.jpg" class="card-img-top" alt="Card Image 3">
+          <div class="card-body">
+            <h5 class="card-title">Strawberry</h5>
+            <p class="card-text">Strawberries are a beloved fruit renowned for their vibrant red color, sweet flavor, and juicy texture. These succulent berries are not only visually appealing with their bright hue and delicate seeds but also offer a refreshing burst of natural sweetness with just a hint of tartness. Each bite delivers a satisfying blend of juicy and tender flesh, making strawberries a delightful addition to a variety of dishes. Whether enjoyed fresh on their own, added to salads, blended into smoothies, or featured in desserts like tarts and ice creams, strawberries bring a touch of summer to any occasion. Rich in vitamins, antioxidants, and fiber, they not only please the palate but also contribute to a healthy diet. Their versatility and irresistible taste make strawberries a perennial favorite among fruit lovers.</p>
+            <a href="#" class="btn btn-primary">Click here for more details!</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Fourth Card -->
+      <div class="col">
+        <div class="card">
+          <img src="images/image7.jpg" class="card-img-top" alt="Card Image 4">
+          <div class="card-body">
+            <h5 class="card-title">Chocolate</h5>
+            <p class="card-text">Chocolate cone ice cream is a delightful treat that combines the creamy richness of chocolate ice cream with the crisp, crunchy texture of a classic waffle cone. The ice cream itself is a luscious, velvety blend of cocoa, delivering a deep, satisfying chocolate flavor that melts smoothly on the tongue. Each bite is a harmonious experience, where the decadent chocolate ice cream contrasts beautifully with the sweet, slightly toasted notes of the cone. The waffle cone adds a satisfying crunch, enhancing the overall texture and creating a perfect balance between the creamy and crispy elements. Ideal for both chocolate enthusiasts and casual ice cream lovers, chocolate cone ice cream offers a timeless indulgence that is as visually appealing as it is delicious, making it a standout choice for a refreshing and enjoyable dessert.</p>
+            <a href="#" class="btn btn-primary">Click here for more details!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Gallery end -->
+
+<!-- Contact Us form -->
+<section id="ContactUs" class="mt-5">
+  <div class="container">
+    <h1>Contact Us</h1>
+    <div class="input-group flex-nowrap mb-3">
+      <span class="input-group-text" id="addon-wrapping">@</span>
+      <input type="text" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="addon-wrapping">
+    </div>
+    <div class="input-group flex-nowrap mb-3">
+      <span class="input-group-text" id="addon-wrapping">@</span>
+      <input type="text" class="form-control" placeholder="E-mail" aria-label="E-mail" aria-describedby="addon-wrapping">
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text">Your Query</span>
+      <textarea class="form-control" placeholder="Type your query here..." aria-label="Your Query"></textarea>
+    </div>
+    <div>
+      <input class="btn btn-primary" type="submit" value="Submit">
+    </div>
+  </div>
+</section>
+<!-- Contact Us form end -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
